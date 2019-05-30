@@ -31,9 +31,13 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 var phone = phoneBook.map( function (obj) {
+  // Create new object
   var result = {}
+  // Assign a new key
   result[Object.keys(obj)[0]];
+  // Assign a new value to the key...in this case the value is the new phone number
   result[Object.keys(obj)[0]] = Object.values(obj)[0].charAt(0) + "-" + Object.values(obj);
+  // Return the new object
   return result;
 })
 
