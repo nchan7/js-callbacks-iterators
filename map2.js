@@ -30,4 +30,11 @@ var phoneBook = [
 // Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
-//Your code here
+var phone = phoneBook.map( function (obj) {
+  var result = {}
+  result[Object.keys(obj)[0]];
+  result[Object.keys(obj)[0]] = Object.values(obj)[0].charAt(0) + "-" + Object.values(obj);
+  return result;
+})
+
+console.log(phone);

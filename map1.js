@@ -3,6 +3,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 // Write some code using map that takes the above array of mneumonics, and returns a two dimensional array.
 // For example, the 0th element of the new array should be:
 // ['My', 'Very', 'Excellent', 'Mother', 'Just', 'Sent', 'Me', 'Nine', 'Pizzas']
+var newArr = [];
 
-// Your code here!
+var twoDimArr = mneumonics.map( function (element) {
+    return newArr.push(element.split(" "));
+});
+console.log(newArr);
 
